@@ -85,17 +85,17 @@ function chooseHole(holes) {
 * return the timeoutId if the game continues or the string "game stopped"
 * if the game is over.
 *
-*  // if time > 0:
-*  //   timeoutId = showUp()
-*  //   return timeoutId
-*  // else
-*  //   gameStopped = stopGame()
-*  //   return gameStopped
+*  
 *
 */
 function gameOver() {
   // TODO: Write your code here
-  
+  if (time > 0) {
+    timeoutID = showUp();
+    return timeoutID;}
+  else {
+    gameStopped = stopGame();
+    return gameStopped;}
 }
 
 /**
@@ -108,8 +108,8 @@ function gameOver() {
 *
 */
 function showUp() {
-  let delay = 0; // TODO: Update so that it uses setDelay()
-  const hole = 0;  // TODO: Update so that it use chooseHole()
+  let delay = setDelay(difficulty); // TODO: Update so that it uses setDelay()
+  const hole = chooseHole(holes);  // TODO: Update so that it use chooseHole()
   return showAndHide(hole, delay);
 }
 
