@@ -8,7 +8,6 @@ html {
   background-size: cover;
   z-index:0;
   overflow: visible;
-  cursor: url('../assets/mallet.png'), auto;
 }
 
 h1 {
@@ -22,7 +21,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 40px;
-  color: #6AA84F;
+  color: #654321;
   -webkit-text-stroke: 1px black;
 }
 
@@ -41,6 +40,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  cursor: url('../assets/mallet.png'), auto;
 }
 
 .hole {
@@ -65,7 +65,7 @@ h2 {
 
 .mole {
   /*background:url('./assets/mole.png') bottom center no-repeat;*/
-  background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat;
+  background:url("../assets/mole2.png") bottom center no-repeat;
   background-size: 40%;
   position: absolute;
   top: 100%;
