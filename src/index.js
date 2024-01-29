@@ -260,7 +260,10 @@ function stopGame(){
 function startGame(){
   setDuration(10);
   showUp();
-  return "game started";
+  clearScore();
+  setEventListeners();
+  startTimer();
+  return "Game Started!";
 }
 
 startButton.addEventListener("click", startGame);
